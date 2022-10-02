@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "eslint": "^8.24.0"
-  },
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "First project Hexlet",
@@ -29,6 +26,8 @@
     "dir-glob": "^3.0.1",
     "doctrine": "^3.0.0",
     "escape-string-regexp": "^4.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-scope": "^7.1.1",
     "eslint-utils": "^3.0.0",
     "eslint-visitor-keys": "^3.3.0",
@@ -125,10 +124,16 @@
   "author": "Pavel Shorin",
   "license": "ISC",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "cli": "src/cli.js"
   },
   "bugs": {
     "url": "https://github.com/PShorin/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/PShorin/frontend-project-44#readme"
+  "homepage": "https://github.com/PShorin/frontend-project-44#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0"
+  }
 }
