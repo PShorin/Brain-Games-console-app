@@ -13,4 +13,6 @@ plugins:
 rules:
   no-console: 0
   import/extensions: 0
+  eslint-disable-next-line: 0
+  import/prefer-default-export: 0
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]

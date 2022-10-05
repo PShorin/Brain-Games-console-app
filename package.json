@@ -125,7 +125,8 @@
   "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "cli": "src/cli.js"
+    "cli": "src/cli.js",
+    "brain-even": "bin/brain-even.js"
   },
   "bugs": {
     "url": "https://github.com/PShorin/frontend-project-44/issues"
