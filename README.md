@@ -3,7 +3,7 @@
 [![Actions Status](https://github.com/PShorin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/PShorin/frontend-project-44/actions)
 
 ### Asciinema link
-https://asciinema.org/a/1m6rFlinEfgSbVWheswsh8rx9
+https://asciinema.org/a/vx2c55Y8x5sRB1UoLgNd2uVHL
 
 ### CodeClimate Maintainability:
 
