@@ -8,5 +8,4 @@ const askName = () => {
   return inputName;
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { askName };
