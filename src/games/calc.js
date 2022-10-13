@@ -1,4 +1,4 @@
-import { runGame } from '../index.js';
+import runGame from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const description = 'What is the result of the expression?';
@@ -22,6 +22,8 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export const runGameCalc = () => {
+const runGameCalc = () => {
   runGame(description, getQuestionAndAnswer);
 };
+
+export default runGameCalc;

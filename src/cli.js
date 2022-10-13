@@ -8,4 +8,4 @@ const askName = () => {
   return inputName;
 };
 
-export { askName };
+export default askName;

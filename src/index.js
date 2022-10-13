@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
-import { askName } from './cli.js';
+// eslint-disable-next-line import/named
+import askName from './cli.js';
 
 const userName = askName();
 
 const gameCount = 3;
 
-export const runGame = (description, getQuestionAndAnswer) => {
+const runGame = (description, getQuestionAndAnswer) => {
   console.log(description);
   for (let i = 1; i <= gameCount; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
@@ -23,3 +24,5 @@ export const runGame = (description, getQuestionAndAnswer) => {
     }
   }
 };
+
+export default runGame;
