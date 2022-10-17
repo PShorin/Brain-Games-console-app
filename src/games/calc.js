@@ -7,20 +7,20 @@ const getQuestionAndAnswer = () => {
   const mathSign = ['+', '-', '*'];
   const mathSignInTask = mathSign[getRandomNumber(0, 3)];
 
-  const number1 = getRandomNumber(0, 100);
-  const number2 = getRandomNumber(0, 50);
-  const number3 = getRandomNumber(2, 5);
+  const firstNumberForOperation = getRandomNumber(0, 100);
+  const secondNumberForOperation = getRandomNumber(0, 50);
+  const extraNumberForDivide = getRandomNumber(2, 5);
   if (mathSignInTask === '+') {
-    const question = `${number1} + ${number2}`;
-    const correctAnswer = number1 + number2;
+    const question = `${firstNumberForOperation} + ${secondNumberForOperation}`;
+    const correctAnswer = firstNumberForOperation + secondNumberForOperation;
     return [question, correctAnswer];
   } if (mathSignInTask === '-') {
-    const question = `${number1} - ${number2}`;
-    const correctAnswer = number1 - number2;
+    const question = `${firstNumberForOperation} - ${secondNumberForOperation}`;
+    const correctAnswer = firstNumberForOperation - secondNumberForOperation;
     return [question, correctAnswer];
   }
-  const question = `${number2} * ${number3}`;
-  const correctAnswer = number2 * number3;
+  const question = `${secondNumberForOperation} * ${extraNumberForDivide}`;
+  const correctAnswer = secondNumberForOperation * extraNumberForDivide;
   return [question, correctAnswer];
 };
 
