@@ -1,5 +1,11 @@
 import readlineSync from 'readline-sync';
-import askName from './cli.js';
+
+const askName = () => {
+  console.log('Welcome to the Brain Games!');
+  const inputName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${inputName}`);
+  return inputName;
+};
 
 const userName = askName();
 
@@ -16,12 +22,10 @@ const runGame = (description, getQuestionAndAnswer) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      break;
-    }
-    if (i === gameCount) {
-      console.log(`Congratulations, ${userName}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
