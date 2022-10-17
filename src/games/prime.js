@@ -4,18 +4,17 @@ import getRandomNumber from '../utils.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getQuestionAndAnswer = () => {
-  const numberToDefine = getRandomNumber(0, 40);
-  const question = numberToDefine;
+  const question = getRandomNumber(1, 40);
   const isPrime = () => {
-    if (numberToDefine < 2) return false;
+    if (question < 2) return false;
     let divider = 2;
-    while (divider <= numberToDefine / 2) {
-      if (numberToDefine % divider === 0) return false;
+    while (divider <= question / 2) {
+      if (question % divider === 0) return false;
       divider += 1;
     }
     return true;
   };
-  const correctAnswer = isPrime(numberToDefine) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
