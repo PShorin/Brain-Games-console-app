@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-// eslint-disable-next-line import/named
 import askName from './cli.js';
 
 const userName = askName();
