@@ -1,3 +1,3 @@
-export const getRandomNumber = (max, min) => Math.floor(Math.random() * (max - min) + min);
+const getRandomNumber = (max, min) => Math.floor(Math.random() * (max - min) + min);
 
-export const isEven = (number) => number % 2 === 0;
+export default getRandomNumber;
