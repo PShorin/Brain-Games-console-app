@@ -3,17 +3,23 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
+const gcd = (x, y, max) => {
+  let maxDevider;
+  for (let i = 1; i <= (max / 2); i += 1) {
+    if (x % i === 0 && y % i === 0) {
+      maxDevider = i;
+    }
+  }
+  return maxDevider;
+};
+
 const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(2, 60);
   const secondNumber = getRandomNumber(2, 60);
   const question = `${firstNumber} ${secondNumber} `;
   const maxNumber = Math.max(firstNumber, secondNumber);
-  let correctAnswer = 1;
-  for (let i = 1; i <= (maxNumber / 2); i += 1) {
-    if (firstNumber % i === 0 && secondNumber % i === 0) {
-      correctAnswer = i;
-    }
-  }
+  const correctAnswer = gcd(firstNumber, secondNumber, maxNumber);
+
   return [question, correctAnswer];
 };
 
