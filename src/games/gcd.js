@@ -5,7 +5,7 @@ const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (x, y, max) => {
   let maxDevider;
-  for (let i = 1; i <= (max / 2); i += 1) {
+  for (let i = 1; i <= max; i += 1) {
     if (x % i === 0 && y % i === 0) {
       maxDevider = i;
     }
