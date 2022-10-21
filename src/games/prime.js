@@ -14,7 +14,8 @@ const isPrime = (number) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomNumber(2, 40);
+  const numberToCheck = getRandomNumber(2, 40);
+  const question = numberToCheck;
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
