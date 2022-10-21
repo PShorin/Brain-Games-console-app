@@ -2,6 +2,8 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const numberLimitStart = 2;
+const numberLimitEnd = 40;
 
 const isPrime = (number) => {
   if (number < 2) return false;
@@ -14,7 +16,7 @@ const isPrime = (number) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const numberToCheck = getRandomNumber(2, 40);
+  const numberToCheck = getRandomNumber(numberLimitStart, numberLimitEnd);
   const question = numberToCheck;
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];

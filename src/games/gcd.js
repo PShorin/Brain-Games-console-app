@@ -2,6 +2,8 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
+const numberLimitStart = 2;
+const numberLimitEnd = 60;
 
 const gcd = (x, y, max) => {
   let maxDevider;
@@ -14,8 +16,8 @@ const gcd = (x, y, max) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const firstNumber = getRandomNumber(2, 60);
-  const secondNumber = getRandomNumber(2, 60);
+  const firstNumber = getRandomNumber(numberLimitStart, numberLimitEnd);
+  const secondNumber = getRandomNumber(numberLimitStart, numberLimitEnd);
   const question = `${firstNumber} ${secondNumber} `;
   const maxNumber = Math.max(firstNumber, secondNumber);
   const correctAnswer = gcd(firstNumber, secondNumber, maxNumber);

@@ -2,6 +2,12 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
+const numberLimitStart = 1;
+const numberLimitEnd = 50;
+const progressionLimitStart = 1;
+const progressionLimitEnd = 15;
+const lengthLimitStart = 5;
+const lengthLimitEnd = 10;
 
 const makeProgression = (number, step, length) => {
   const defaultArray = [number];
@@ -14,9 +20,9 @@ const makeProgression = (number, step, length) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const firstNumberOfProgression = getRandomNumber(1, 50);
-  const progressionStep = getRandomNumber(1, 15);
-  const progressionLength = getRandomNumber(5, 10);
+  const firstNumberOfProgression = getRandomNumber(numberLimitStart, numberLimitEnd);
+  const progressionStep = getRandomNumber(progressionLimitStart, progressionLimitEnd);
+  const progressionLength = getRandomNumber(lengthLimitStart, lengthLimitEnd);
 
   const progression = makeProgression(firstNumberOfProgression, progressionStep, progressionLength);
 
