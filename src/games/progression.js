@@ -10,13 +10,13 @@ const lengthLimitStart = 5;
 const lengthLimitEnd = 10;
 
 const makeProgression = (number, step, length) => {
-  const defaultArray = [number];
+  const arrayWithResult = [number];
   let lastNumber = number;
-  for (let i = 0; i <= length - 1; i += 1) {
-    defaultArray.push(lastNumber + step);
+  for (let i = 0; i < length; i += 1) {
+    arrayWithResult.push(lastNumber + step);
     lastNumber += step;
   }
-  return defaultArray;
+  return arrayWithResult;
 };
 
 const getQuestionAndAnswer = () => {
