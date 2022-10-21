@@ -47,17 +47,15 @@ npm -v
 <p>One of the following versions of Node.js must be installed to run npm:</p>
 
 ```properties
-12.x.x >= 12.13.0
-14.x.x >= 14.15.0
-16.0.0 or higher
+13.0.0 or higher
 ```
 
 <p>And finally, to install "Brain-games", simply use:</p>
 
 ```shell
 git clone https://github.com/PShorin/frontend-project-44.git
-npm ci
 cd frontend-project-44
+make install
 npm link
 ```
 
