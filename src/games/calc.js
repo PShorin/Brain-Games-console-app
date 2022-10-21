@@ -2,6 +2,7 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
+const mathSign = ['+', '-', '*'];
 
 const calculate = (x, y, sign) => {
   switch (sign) {
@@ -12,13 +13,12 @@ const calculate = (x, y, sign) => {
     case '*':
       return x * y;
     default:
-      return null;
+      throw new Error('Error');
   }
 };
 
 const getQuestionAndAnswer = () => {
-  const mathSign = ['+', '-', '*'];
-  const mathSignInTask = mathSign[getRandomNumber(0, 3)];
+  const mathSignInTask = mathSign[getRandomNumber(0, mathSign.length)];
 
   const firstNumber = getRandomNumber(0, 50);
   const secondNumber = getRandomNumber(0, 20);
