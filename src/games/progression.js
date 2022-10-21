@@ -25,7 +25,7 @@ const getQuestionAndAnswer = () => {
   progression[whichNumberUnknown] = '..';
   const question = progression.join(' ');
 
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const runGameProgression = () => {

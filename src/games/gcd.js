@@ -20,7 +20,7 @@ const getQuestionAndAnswer = () => {
   const maxNumber = Math.max(firstNumber, secondNumber);
   const correctAnswer = gcd(firstNumber, secondNumber, maxNumber);
 
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const runGameGcd = () => {
