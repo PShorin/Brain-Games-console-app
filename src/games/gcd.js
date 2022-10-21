@@ -5,11 +5,12 @@ const description = 'Find the greatest common divisor of given numbers.';
 const numberLimitStart = 2;
 const numberLimitEnd = 60;
 
-const gcd = (x, y, max) => {
+const findGcd = (x, y, max) => {
   let maxDevider;
-  for (let i = 1; i <= max; i += 1) {
+  for (let i = max; i >= 0; i -= 1) {
     if (x % i === 0 && y % i === 0) {
       maxDevider = i;
+      break;
     }
   }
   return maxDevider;
@@ -20,7 +21,7 @@ const getQuestionAndAnswer = () => {
   const secondNumber = getRandomNumber(numberLimitStart, numberLimitEnd);
   const question = `${firstNumber} ${secondNumber} `;
   const maxNumber = Math.max(firstNumber, secondNumber);
-  const correctAnswer = gcd(firstNumber, secondNumber, maxNumber);
+  const correctAnswer = findGcd(firstNumber, secondNumber, maxNumber);
 
   return [question, correctAnswer.toString()];
 };

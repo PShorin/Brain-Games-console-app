@@ -5,8 +5,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const numberLimitStart = 0;
 const numberLimitEnd = 100;
 
-const dividerNumber = 2;
-const isEven = (number) => number % dividerNumber === 0;
+const isEven = (number) => number % 2 === 0;
 
 const getQuestionAndAnswer = () => {
   const question = getRandomNumber(numberLimitStart, numberLimitEnd);
