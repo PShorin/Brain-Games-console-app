@@ -4,24 +4,21 @@ import getRandomNumber from '../utils.js';
 const description = 'What number is missing in the progression?';
 const numberLimitStart = 1;
 const numberLimitEnd = 50;
-const progressionLimitStart = 1;
 const progressionLimitEnd = 15;
 const lengthLimitStart = 5;
 const lengthLimitEnd = 10;
 
 const makeProgression = (number, step, length) => {
-  const arrayWithResult = [number];
-  let lastNumber = number;
+  const arrayWithResult = [];
   for (let i = 0; i < length; i += 1) {
-    arrayWithResult.push(lastNumber + step);
-    lastNumber += step;
+    arrayWithResult.push(number + (step * i));
   }
   return arrayWithResult;
 };
 
 const getQuestionAndAnswer = () => {
   const firstNumberOfProgression = getRandomNumber(numberLimitStart, numberLimitEnd);
-  const progressionStep = getRandomNumber(progressionLimitStart, progressionLimitEnd);
+  const progressionStep = getRandomNumber(numberLimitStart, progressionLimitEnd);
   const progressionLength = getRandomNumber(lengthLimitStart, lengthLimitEnd);
 
   const progression = makeProgression(firstNumberOfProgression, progressionStep, progressionLength);
