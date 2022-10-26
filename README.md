@@ -6,7 +6,8 @@
 
 <a href="https://codeclimate.com/github/PShorin/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/fa8b08f32bbbddd0bb58/maintainability" /></a>
 
-<p>**"Brain Games"** - is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.</p>
+<h3>"Brain Games"</h3>
+<p> - is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.</p>
 <h3>Games:</h3>
 <li>Brain-even. Definition of an even number.</li>
 <li>Brain-calc. Calculator. Arithmetic expressions to be evaluated.</li>
