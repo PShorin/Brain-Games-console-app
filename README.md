@@ -1,6 +1,6 @@
 <h2 align="center">Welcome to the Brain Games!</h2> 
 
-### Hexlet tests, linter status and CodeClimate maintainability:
+### Tests, linter status and CodeClimate maintainability:
 
 [![Actions Status](https://github.com/PShorin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/PShorin/frontend-project-44/actions)
 
@@ -80,20 +80,17 @@ brain-prime
 
 <h3>You can watch the exciting gameplay at these links:</h3>
 
-<h4>Asciinema link Brain-games</h4>
-https://asciinema.org/a/atHYLfVKV2cLOFfMtBNNSaVsd
-
 <h4>Asciinema link Brain-even</h4>
-https://asciinema.org/a/pxweKGfByTWwmoDCgEaylJWNg
+https://asciinema.org/a/Es1t66SSSA88GfPBrdU8av1g3
 
 <h4>Asciinema link Brain-calc</h4>
-https://asciinema.org/a/5eKlkzRDgzcT92Rs5W1QpGiv2
+https://asciinema.org/a/rBuI0QpTJoGgimB7mH9mRPvxa
 
 <h4>Asciinema link Brain-gcd</h4>
-https://asciinema.org/a/yZayWIEIHgKoxp0oEfjQokiEA
+https://asciinema.org/a/p37EVDlb0OCMQYv6rDhAMymna
 
 <h4>Asciinema link Brain-progression</h4>
-https://asciinema.org/a/TwQQ1iH7F61rG67e4HpueQgNC
+https://asciinema.org/a/yb0lItWlxrDd4CjQDRRtAFYBz
 
 <h4>Asciinema link Brain-prime</h4>
-https://asciinema.org/a/N3P5Atx5m5hwKxfb090juN3Se
+https://asciinema.org/a/uuWegFyOMpgtiRqe5VTNUdlRn
